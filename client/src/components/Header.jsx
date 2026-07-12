@@ -6,7 +6,7 @@ export default function Header({ session }) {
   const [status, setStatus] = useState('checking'); // checking | online | offline
 
   useEffect(() => {
-    fetch('http://localhost:5000/')
+    fetch('https://devassist-ai-backend-cvyk.onrender.com/')
       .then((res) => (res.ok ? setStatus('online') : setStatus('offline')))
       .catch(() => setStatus('offline'));
   }, []);

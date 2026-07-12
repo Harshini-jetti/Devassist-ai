@@ -1,6 +1,6 @@
 // api.js — all functions that talk to our backend live here
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://devassist-ai-backend-cvyk.onrender.com/api';
 
 async function callApi(endpoint, body) {
   const response = await fetch(`${API_BASE}/${endpoint}`, {
