@@ -8,6 +8,22 @@ DevAssist AI is an AI-powered developer productivity platform that helps develop
 
 ---
 
+## Screenshots
+
+### Authentication
+![Login Page](./screenshots/login-page.png)
+![Signup Page](./screenshots/signup-page.png)
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### AI Tools in Action
+![Explain Code](./screenshots/explain-result.png)
+![Debug & Resolve](./screenshots/debug-result.png)
+![Generate Tests](./screenshots/test-result.png)
+
+---
+
 ## Features
 
 - 🧠 **Understand Code** — Analyzes architecture, logic flow, key concepts, and complexity of any pasted code snippet.
@@ -54,30 +70,44 @@ DevAssist AI is an AI-powered developer productivity platform that helps develop
 - A Google Gemini API key
 
 ### 1. Clone the repo
+
 git clone https://github.com/Harshini-jetti/Devassist-ai.git
 cd Devassist-ai
 
+
 ### 2. Set up the backend
+
 cd server
 npm install
 
+
 Create a `.env` file in `/server`:
+
 GEMINI_API_KEY=your_gemini_api_key
 
+
 Run the server:
+
 npm run dev
 
+
 ### 3. Set up the frontend
+
 cd client
 npm install
 
+
 Create a `.env` file in `/client`:
+
 VITE_SUPABASE_URL=your_supabase_project_url
 VITE_SUPABASE_ANON_KEY=your_supabase_publishable_key
 VITE_API_URL=http://localhost:5000
 
+
 Run the frontend:
+
 npm run dev
+
 
 The app will be available at `http://localhost:5173`.
 
