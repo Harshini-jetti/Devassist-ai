@@ -8,22 +8,6 @@ DevAssist AI is an AI-powered developer productivity platform that helps develop
 
 ---
 
-## Screenshots
-
-### Authentication
-![Login Page](./screenshots/login-page.png)
-![Signup Page](./screenshots/signup-page.png)
-
-### Dashboard
-![Dashboard](./screenshots/dashboard.png)
-
-### AI Tools in Action
-![Explain Code](./screenshots/explain-result.png)
-![Debug & Resolve](./screenshots/debug-result.png)
-![Generate Tests](./screenshots/test-result.png)
-
----
-
 ## Features
 
 - 🧠 **Understand Code** — Analyzes architecture, logic flow, key concepts, and complexity of any pasted code snippet.
@@ -59,82 +43,6 @@ DevAssist AI is an AI-powered developer productivity platform that helps develop
 4. The request is sent to the Express backend, which builds a structured prompt and calls the Gemini API.
 5. Gemini returns a structured JSON response (root cause, explanation, fix, corrected code, best practices, or generated test cases).
 6. The frontend renders the AI's response in a clean, readable format.
-
----
-
-## Getting Started (Local Development)
-
-### Prerequisites
-- Node.js (v18+)
-- A Supabase project (for auth)
-- A Google Gemini API key
-
-### 1. Clone the repo
-
-git clone https://github.com/Harshini-jetti/Devassist-ai.git
-cd Devassist-ai
-
-
-### 2. Set up the backend
-
-cd server
-npm install
-
-
-Create a `.env` file in `/server`:
-
-GEMINI_API_KEY=your_gemini_api_key
-
-
-Run the server:
-
-npm run dev
-
-
-### 3. Set up the frontend
-
-cd client
-npm install
-
-
-Create a `.env` file in `/client`:
-
-VITE_SUPABASE_URL=your_supabase_project_url
-VITE_SUPABASE_ANON_KEY=your_supabase_publishable_key
-VITE_API_URL=http://localhost:5000
-
-
-Run the frontend:
-
-npm run dev
-
-
-The app will be available at `http://localhost:5173`.
-
----
-
-## Project Structure
-
-Devassist-ai/
-├── client/               # React + Vite frontend
-│   ├── src/
-│   │   ├── components/   # Auth, CodeEditor, ResultCard, etc.
-│   │   └── App.jsx
-│   └── .env
-├── server/               # Node + Express backend
-│   ├── routes/           # explain.js, debug.js, generateTests.js
-│   ├── prompts/          # promptTemplates.js
-│   └── index.js
-└── README.md
-
----
-
-## Roadmap
-
-- [ ] Support for more languages (currently JavaScript & Python focused)
-- [ ] Save analysis history per user
-- [ ] Syntax highlighting improvements in the code editor
-- [ ] Rate limiting / usage dashboard
 
 ---
 
