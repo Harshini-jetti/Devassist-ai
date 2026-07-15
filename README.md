@@ -7,7 +7,24 @@ DevAssist AI is an AI-powered developer productivity platform that helps develop
 🔗 **Live App:** [devassist-ai-three.vercel.app](https://devassist-ai-three.vercel.app)
 
 ---
+## Screenshots
 
+### Authentication
+![Login Page](./screenshots/login-page.png)
+![Signup Page](./screenshots/signup-page.png)
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### AI Tools in Action
+![Explain Code 1](./screenshots/explain-result-1.png)
+![Explain Code 2](./screenshots/explain-result-2.png)
+![Debug & Resolve 1](./screenshots/debug-result-1.png)
+![Debug & Resolve 2](./screenshots/debug-result-2.png)
+![Generate Tests 1](./screenshots/test-result-1.png)
+![Generate Tests 2](./screenshots/test-result-2.png)
+
+---
 ## Features
 
 - 🧠 **Understand Code** — Analyzes architecture, logic flow, key concepts, and complexity of any pasted code snippet.
